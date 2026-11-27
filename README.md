@@ -1,14 +1,16 @@
-# Welcome to your Lovable project
+# Bridge to Work
+
+Develop an innovative platform that bridges the gap between education and employment by helping young graduates and job seekers gain local work experience and access professional networks. The platform should connect job seekers with experienced mentors, organizations offering structured fellowships and returnships, and employers seeking talent based on skills rather than work experience alone. It should provide mentorship opportunities, practical training, career guidance, internship and fellowship opportunities, and direct connections with hiring partners. The project should focus on reducing unemployment, promoting equal access to employment opportunities, and strengthening partnerships between educational institutions, businesses, and communities. Align the solution with SDGs 8, 10, and 17.
 
 This project was built with [Lovable](https://lovable.dev).
 
 ## Build with Lovable
 
-Open your project in the [Lovable editor](https://lovable.dev) and keep building.
+Continue developing this project in the [Lovable editor](https://lovable.dev/projects/7028523b-eddc-4f59-837a-bfc091449747).
 
 - **Ship faster**: describe what you want to build and Lovable handles the code.
-- **Stay in sync**: connect the project to GitHub and every change made in Lovable is committed straight to your repository.
-- **Full ownership**: this code is yours. Push to your repository and your changes sync back into Lovable, ready for your next prompt.
+- **Stay in sync**: every change made in Lovable is committed straight to this repository.
+- **Full ownership**: this code is yours. Push to `main` on GitHub and your changes sync back into Lovable, ready for your next prompt.
 
 ## Development
 
@@ -20,10 +22,3 @@ cd <repository-name>
 npm i
 npm run dev
 ```
-
-## Built with
-
-- TanStack Start
-- TypeScript
-- React
-- Tailwind CSS
