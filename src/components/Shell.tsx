@@ -13,7 +13,7 @@ export function Shell({ children }: { children: ReactNode }) {
     <div className="min-h-screen flex flex-col">
       <header className="sticky top-0 z-20 border-b bg-background/85 backdrop-blur">
         <div className="mx-auto max-w-6xl flex items-center justify-between px-5 h-16">
-          <Link to="/" className="font-display text-2xl font-semibold text-primary">Bridgeway</Link>
+          <Link to="/" className="font-display text-2xl font-semibold text-primary">Firststep</Link>
           <nav className="hidden md:flex gap-6 text-sm font-medium">
             {nav.map((n) => (
               <Link key={n.to} to={n.to} className="text-muted-foreground hover:text-foreground" activeProps={{ className: "text-foreground" }}>{n.label}</Link>
@@ -28,7 +28,7 @@ export function Shell({ children }: { children: ReactNode }) {
       <main className="flex-1">{children}</main>
       <footer className="border-t mt-20">
         <div className="mx-auto max-w-6xl px-5 py-10 flex flex-col md:flex-row justify-between gap-4 text-sm text-muted-foreground">
-          <p><span className="font-display text-lg text-foreground">Bridgeway</span> — from education to employment.</p>
+          <p><span className="font-display text-lg text-foreground">Firststep</span> — from education to employment.</p>
           <p>Advancing SDG 8 · SDG 10 · SDG 17</p>
         </div>
       </footer>

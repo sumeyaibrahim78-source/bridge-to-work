@@ -5,9 +5,9 @@ import { mentors } from "@/lib/data";
 
 export const Route = createFileRoute("/mentors")({
   head: () => ({ meta: [
-    { title: "Mentors — Bridgeway" },
+    { title: "Mentors — Firststep" },
     { name: "description", content: "Book free 1:1 career guidance with experienced professionals." },
-    { property: "og:title", content: "Mentors — Bridgeway" },
+    { property: "og:title", content: "Mentors — Firststep" },
     { property: "og:description", content: "Book free 1:1 career guidance with experienced professionals." },
   ] }),
   component: Page,

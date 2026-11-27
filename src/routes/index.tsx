@@ -5,9 +5,9 @@ import { opportunities } from "@/lib/data";
 export const Route = createFileRoute("/")({
   head: () => ({
     meta: [
-      { title: "Bridgeway — From education to employment" },
+      { title: "Firststep — From education to employment" },
       { name: "description", content: "Mentors, fellowships, returnships and skills-first employers helping graduates and job seekers gain local work experience." },
-      { property: "og:title", content: "Bridgeway — From education to employment" },
+      { property: "og:title", content: "Firststep — From education to employment" },
       { property: "og:description", content: "Mentors, fellowships, returnships and skills-first hiring for young graduates and job seekers." },
     ],
   }),
@@ -35,7 +35,7 @@ function Index() {
           <div>
             <p className="chip">For graduates, job seekers & career returners</p>
             <h1 className="mt-5 text-5xl md:text-7xl font-semibold leading-[1.02]">Your first experience <em className="text-accent not-italic">shouldn't</em> require experience.</h1>
-            <p className="mt-6 max-w-xl text-lg opacity-85">Bridgeway connects you with mentors, fellowships, returnships and employers who hire for skills — so you can build local work experience and a professional network.</p>
+            <p className="mt-6 max-w-xl text-lg opacity-85">Firststep connects you with mentors, fellowships, returnships and employers who hire for skills — so you can build local work experience and a professional network.</p>
             <div className="mt-8 flex flex-wrap gap-3">
               <Link to="/opportunities" className="btn btn-accent">Explore opportunities →</Link>
               <Link to="/mentors" className="btn btn-ghost-light">Meet a mentor</Link>

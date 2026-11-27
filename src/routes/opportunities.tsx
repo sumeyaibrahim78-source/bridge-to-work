@@ -6,9 +6,9 @@ import { opportunities, type OppType } from "@/lib/data";
 
 export const Route = createFileRoute("/opportunities")({
   head: () => ({ meta: [
-    { title: "Opportunities — Bridgeway" },
+    { title: "Opportunities — Firststep" },
     { name: "description", content: "Internships, fellowships, returnships and skills-first entry roles." },
-    { property: "og:title", content: "Opportunities — Bridgeway" },
+    { property: "og:title", content: "Opportunities — Firststep" },
     { property: "og:description", content: "Internships, fellowships, returnships and skills-first entry roles." },
   ] }),
   component: Page,

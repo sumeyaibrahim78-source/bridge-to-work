@@ -5,9 +5,9 @@ import { trainings } from "@/lib/data";
 
 export const Route = createFileRoute("/training")({
   head: () => ({ meta: [
-    { title: "Training & career guidance — Bridgeway" },
+    { title: "Training & career guidance — Firststep" },
     { name: "description", content: "Free practical courses that make you job-ready." },
-    { property: "og:title", content: "Training & career guidance — Bridgeway" },
+    { property: "og:title", content: "Training & career guidance — Firststep" },
     { property: "og:description", content: "Free practical courses that make you job-ready." },
   ] }),
   component: Page,

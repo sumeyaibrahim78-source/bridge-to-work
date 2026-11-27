@@ -9,7 +9,7 @@ export const opportunities: Opportunity[] = [
   { id: "3", title: "Return-to-Work Program: Finance", org: "Gulf Commercial Bank", type: "Returnship", location: "On-site", duration: "16 weeks", paid: true, skills: ["Accounting", "Reporting"], summary: "For professionals returning after a career break, with flexible hours and a coach." },
   { id: "4", title: "Community Programs Intern", org: "Green Cities Foundation", type: "Internship", location: "On-site", duration: "3 months", paid: true, skills: ["Communication", "Event planning"], summary: "Run youth workshops alongside municipal partners and local schools." },
   { id: "5", title: "Customer Success Associate", org: "Tamkeen Logistics", type: "Entry role", location: "Hybrid", duration: "Full-time", paid: true, skills: ["Communication", "CRM", "Arabic & English"], summary: "Paid onboarding academy for first-time job seekers." },
-  { id: "6", title: "UX Research Fellowship", org: "Bridgeway Labs × State University", type: "Fellowship", location: "Remote", duration: "4 months", paid: true, skills: ["Interviewing", "Figma"], summary: "University–industry partnership with real client briefs." },
+  { id: "6", title: "UX Research Fellowship", org: "Firststep Labs × State University", type: "Fellowship", location: "Remote", duration: "4 months", paid: true, skills: ["Interviewing", "Figma"], summary: "University–industry partnership with real client briefs." },
 ];
 export const mentors = [
   { name: "Amira Haddad", role: "Senior Data Scientist", org: "Telecom sector", years: 12, topics: ["Data careers", "Interview prep"], initials: "AH" },
