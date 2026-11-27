@@ -5,9 +5,9 @@ import { mentors } from "@/lib/data";
 
 export const Route = createFileRoute("/mentors")({
   head: () => ({ meta: [
-    { title: "Mentors — Firststep" },
+    { title: "Mentors — TalentBridge" },
     { name: "description", content: "Book free 1:1 career guidance with experienced professionals." },
-    { property: "og:title", content: "Mentors — Firststep" },
+    { property: "og:title", content: "Mentors — TalentBridge" },
     { property: "og:description", content: "Book free 1:1 career guidance with experienced professionals." },
   ] }),
   component: Page,
@@ -17,7 +17,7 @@ function Page() {
   return (
     <Shell>
       <PageHead eyebrow="Mentorship" title="Learn from people who've been there" desc="Free sessions on CVs, interviews, career changes and building your network." />
-      <div className="mx-auto max-w-6xl px-5 grid sm:grid-cols-2 lg:grid-cols-3 gap-5">
+      <div className="mx-auto max-w-6xl px-5 pt-10 grid sm:grid-cols-2 lg:grid-cols-3 gap-5">
         {mentors.map((m) => (
           <article key={m.name} className="rounded-2xl bg-card p-6 shadow-card">
             <div className="flex items-center gap-4">

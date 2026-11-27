@@ -5,9 +5,9 @@ import { Shell, PageHead } from "@/components/Shell";
 
 export const Route = createFileRoute("/partners")({
   head: () => ({ meta: [
-    { title: "Partner with us — Firststep" },
+    { title: "Partner with us — TalentBridge" },
     { name: "description", content: "Employers, universities and communities building skills-first pathways to work." },
-    { property: "og:title", content: "Partner with us — Firststep" },
+    { property: "og:title", content: "Partner with us — TalentBridge" },
     { property: "og:description", content: "Employers, universities and communities building skills-first pathways to work." },
   ] }),
   component: Page,
@@ -24,7 +24,7 @@ function Page() {
   return (
     <Shell>
       <PageHead eyebrow="Partners" title="Hire for potential. Build the pipeline together." desc="Join a network of businesses, universities and communities reducing unemployment." />
-      <div className="mx-auto max-w-6xl px-5 grid md:grid-cols-3 gap-5">
+      <div className="mx-auto max-w-6xl px-5 pt-10 grid md:grid-cols-3 gap-5">
         {kinds.map((k) => <div key={k.t} className="rounded-2xl bg-card p-6 shadow-card"><h3 className="text-xl font-semibold">{k.t}</h3><p className="mt-2 text-sm text-muted-foreground">{k.d}</p></div>)}
       </div>
       <form onSubmit={(e) => { e.preventDefault(); setSent(true); toast.success("Thanks! Our partnerships team will reach out."); }}

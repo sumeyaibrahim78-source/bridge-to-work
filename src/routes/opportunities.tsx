@@ -6,9 +6,9 @@ import { opportunities, type OppType } from "@/lib/data";
 
 export const Route = createFileRoute("/opportunities")({
   head: () => ({ meta: [
-    { title: "Opportunities — Firststep" },
+    { title: "Opportunities — TalentBridge" },
     { name: "description", content: "Internships, fellowships, returnships and skills-first entry roles." },
-    { property: "og:title", content: "Opportunities — Firststep" },
+    { property: "og:title", content: "Opportunities — TalentBridge" },
     { property: "og:description", content: "Internships, fellowships, returnships and skills-first entry roles." },
   ] }),
   component: Page,
@@ -24,7 +24,7 @@ function Page() {
   return (
     <Shell>
       <PageHead eyebrow="Opportunities" title="Gain real, paid local experience" desc="Every listing is matched on skills. No “3 years required” for your first role." />
-      <div className="mx-auto max-w-6xl px-5">
+      <div className="mx-auto max-w-6xl px-5 pt-10">
         <div className="flex flex-col md:flex-row gap-3 md:items-center">
           <input value={q} onChange={(e) => setQ(e.target.value)} placeholder="Search by skill, role or organization" className="flex-1 rounded-full border bg-card px-5 py-3 outline-none focus:ring-2 ring-ring" />
           <div className="flex flex-wrap gap-2">

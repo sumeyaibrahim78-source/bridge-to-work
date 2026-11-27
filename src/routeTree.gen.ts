@@ -10,14 +10,34 @@
 
 import { Route as rootRouteImport } from './routes/__root'
 import { Route as IndexRouteImport } from './routes/index'
+import { Route as AboutRouteImport } from './routes/about'
+import { Route as ContactRouteImport } from './routes/contact'
+import { Route as LoginRouteImport } from './routes/login'
 import { Route as MentorsRouteImport } from './routes/mentors'
 import { Route as OpportunitiesRouteImport } from './routes/opportunities'
 import { Route as PartnersRouteImport } from './routes/partners'
+import { Route as RegisterRouteImport } from './routes/register'
+import { Route as SkillsMatchingRouteImport } from './routes/skills-matching'
 import { Route as TrainingRouteImport } from './routes/training'
 
 const IndexRoute = IndexRouteImport.update({
   id: '/',
   path: '/',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const AboutRoute = AboutRouteImport.update({
+  id: '/about',
+  path: '/about',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const ContactRoute = ContactRouteImport.update({
+  id: '/contact',
+  path: '/contact',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const LoginRoute = LoginRouteImport.update({
+  id: '/login',
+  path: '/login',
   getParentRoute: () => rootRouteImport,
 } as any)
 const MentorsRoute = MentorsRouteImport.update({
@@ -35,6 +55,16 @@ const PartnersRoute = PartnersRouteImport.update({
   path: '/partners',
   getParentRoute: () => rootRouteImport,
 } as any)
+const RegisterRoute = RegisterRouteImport.update({
+  id: '/register',
+  path: '/register',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const SkillsMatchingRoute = SkillsMatchingRouteImport.update({
+  id: '/skills-matching',
+  path: '/skills-matching',
+  getParentRoute: () => rootRouteImport,
+} as any)
 const TrainingRoute = TrainingRouteImport.update({
   id: '/training',
   path: '/training',
@@ -43,40 +73,90 @@ const TrainingRoute = TrainingRouteImport.update({
 
 export interface FileRoutesByFullPath {
   '/': typeof IndexRoute
+  '/about': typeof AboutRoute
+  '/contact': typeof ContactRoute
+  '/login': typeof LoginRoute
   '/mentors': typeof MentorsRoute
   '/opportunities': typeof OpportunitiesRoute
   '/partners': typeof PartnersRoute
+  '/register': typeof RegisterRoute
+  '/skills-matching': typeof SkillsMatchingRoute
   '/training': typeof TrainingRoute
 }
 export interface FileRoutesByTo {
   '/': typeof IndexRoute
+  '/about': typeof AboutRoute
+  '/contact': typeof ContactRoute
+  '/login': typeof LoginRoute
   '/mentors': typeof MentorsRoute
   '/opportunities': typeof OpportunitiesRoute
   '/partners': typeof PartnersRoute
+  '/register': typeof RegisterRoute
+  '/skills-matching': typeof SkillsMatchingRoute
   '/training': typeof TrainingRoute
 }
 export interface FileRoutesById {
   __root__: typeof rootRouteImport
   '/': typeof IndexRoute
+  '/about': typeof AboutRoute
+  '/contact': typeof ContactRoute
+  '/login': typeof LoginRoute
   '/mentors': typeof MentorsRoute
   '/opportunities': typeof OpportunitiesRoute
   '/partners': typeof PartnersRoute
+  '/register': typeof RegisterRoute
+  '/skills-matching': typeof SkillsMatchingRoute
   '/training': typeof TrainingRoute
 }
 export interface FileRouteTypes {
   fileRoutesByFullPath: FileRoutesByFullPath
-  fullPaths: '/' | '/mentors' | '/opportunities' | '/partners' | '/training'
+  fullPaths:
+    | '/'
+    | '/about'
+    | '/contact'
+    | '/login'
+    | '/mentors'
+    | '/opportunities'
+    | '/partners'
+    | '/register'
+    | '/skills-matching'
+    | '/training'
   fileRoutesByTo: FileRoutesByTo
-  to: '/' | '/mentors' | '/opportunities' | '/partners' | '/training'
+  to:
+    | '/'
+    | '/about'
+    | '/contact'
+    | '/login'
+    | '/mentors'
+    | '/opportunities'
+    | '/partners'
+    | '/register'
+    | '/skills-matching'
+    | '/training'
   id:
-    '__root__' | '/' | '/mentors' | '/opportunities' | '/partners' | '/training'
+    | '__root__'
+    | '/'
+    | '/about'
+    | '/contact'
+    | '/login'
+    | '/mentors'
+    | '/opportunities'
+    | '/partners'
+    | '/register'
+    | '/skills-matching'
+    | '/training'
   fileRoutesById: FileRoutesById
 }
 export interface RootRouteChildren {
   IndexRoute: typeof IndexRoute
+  AboutRoute: typeof AboutRoute
+  ContactRoute: typeof ContactRoute
+  LoginRoute: typeof LoginRoute
   MentorsRoute: typeof MentorsRoute
   OpportunitiesRoute: typeof OpportunitiesRoute
   PartnersRoute: typeof PartnersRoute
+  RegisterRoute: typeof RegisterRoute
+  SkillsMatchingRoute: typeof SkillsMatchingRoute
   TrainingRoute: typeof TrainingRoute
 }
 
@@ -87,6 +167,27 @@ declare module '@tanstack/react-router' {
       path: '/'
       fullPath: '/'
       preLoaderRoute: typeof IndexRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/about': {
+      id: '/about'
+      path: '/about'
+      fullPath: '/about'
+      preLoaderRoute: typeof AboutRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/contact': {
+      id: '/contact'
+      path: '/contact'
+      fullPath: '/contact'
+      preLoaderRoute: typeof ContactRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/login': {
+      id: '/login'
+      path: '/login'
+      fullPath: '/login'
+      preLoaderRoute: typeof LoginRouteImport
       parentRoute: typeof rootRouteImport
     }
     '/mentors': {
@@ -110,6 +211,20 @@ declare module '@tanstack/react-router' {
       preLoaderRoute: typeof PartnersRouteImport
       parentRoute: typeof rootRouteImport
     }
+    '/register': {
+      id: '/register'
+      path: '/register'
+      fullPath: '/register'
+      preLoaderRoute: typeof RegisterRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/skills-matching': {
+      id: '/skills-matching'
+      path: '/skills-matching'
+      fullPath: '/skills-matching'
+      preLoaderRoute: typeof SkillsMatchingRouteImport
+      parentRoute: typeof rootRouteImport
+    }
     '/training': {
       id: '/training'
       path: '/training'
@@ -122,9 +237,14 @@ declare module '@tanstack/react-router' {
 
 const rootRouteChildren: RootRouteChildren = {
   IndexRoute: IndexRoute,
+  AboutRoute: AboutRoute,
+  ContactRoute: ContactRoute,
+  LoginRoute: LoginRoute,
   MentorsRoute: MentorsRoute,
   OpportunitiesRoute: OpportunitiesRoute,
   PartnersRoute: PartnersRoute,
+  RegisterRoute: RegisterRoute,
+  SkillsMatchingRoute: SkillsMatchingRoute,
   TrainingRoute: TrainingRoute,
 }
 export const routeTree = rootRouteImport
